@@ -1,15 +1,15 @@
 import { siteConfig } from '@/lib/site-config'
 import Link from 'next/link'
-import { FaXTwitter } from 'react-icons/fa6'
+import { FaInstagram, FaXTwitter } from 'react-icons/fa6'
 import { FaWhatsapp, FaTelegramPlane } from 'react-icons/fa'
 import Image from 'next/image'
+import { MailIcon } from 'lucide-react'
 
 export function Footer() {
   return (
     <footer id="contact" className="border-brand/20 border-t py-16">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-4">
-          {/* Brand */}
+        <div className="grid gap-12 md:grid-cols-3">
           <div className="space-y-4">
             <div className="group flex items-center gap-3">
               <div className="relative flex size-6 items-center justify-center rounded-full">
@@ -17,10 +17,11 @@ export function Footer() {
                   src={siteConfig.logo.href}
                   alt={siteConfig.logo.alt}
                   fill
+                  sizes="24px, (max-width: 640px): 32px"
                   className="object-cover"
                 />
               </div>
-              <span className="text-primary group-hover:text-brand text-xl font-bold transition-colors">
+              <span className="text-primary group-hover:text-brand text-xl font-bold whitespace-nowrap transition-colors">
                 {siteConfig.logo.label}
               </span>
             </div>
@@ -46,7 +47,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div className="space-y-4">
             <h3 className="text-primary font-bold">Contact</h3>
             <ul className="flex items-center gap-x-6">
@@ -76,6 +76,26 @@ export function Footer() {
                   className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
                 >
                   <FaTelegramPlane className="size-5" />
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href={siteConfig.social_links.instagram}
+                  target="_blank"
+                  className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+                >
+                  <FaInstagram className="size-5" />
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href={`mailto:${siteConfig.email}`}
+                  target="_blank"
+                  className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+                >
+                  <MailIcon className="size-5" />
                 </Link>
               </li>
             </ul>

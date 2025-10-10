@@ -49,7 +49,6 @@ export function HeroSection() {
 
       <div className="relative z-10 container mx-auto px-4 lg:px-8">
         <div className="mx-auto max-w-6xl space-y-12 pt-8 text-center">
-          {/* Badge */}
           <div className="scroll-reveal border-brand/30 bg-brand/5 inline-flex items-center gap-2 rounded-full border px-6 py-3">
             <span className="text-brand text-sm font-medium uppercase">
               WE ARE {siteConfig.title} MARKETING
@@ -58,7 +57,6 @@ export function HeroSection() {
           </div>
 
           <div className="flex flex-col items-center justify-center gap-y-12 lg:flex-row">
-            {/* Main Heading */}
             <div className="scroll-reveal space-y-6 text-center lg:text-left">
               <h1 className="text-4xl leading-tight font-bold text-balance capitalize md:text-5xl lg:text-6xl">
                 We provide
@@ -82,7 +80,6 @@ export function HeroSection() {
               </p>
             </div>
 
-            {/* Stats */}
             <div className="scroll-reveal flex flex-wrap justify-center gap-12 pt-8 lg:flex-1 lg:shrink-0">
               <div className="space-y-2">
                 <div className="text-brand text-5xl font-bold md:text-6xl">

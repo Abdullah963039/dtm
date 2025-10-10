@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { ServiceId, type Service } from './data'
+import { type Service } from './data'
 import {
   Dialog,
   DialogContent,
@@ -11,12 +11,19 @@ import {
 } from '@/components/ui/dialog'
 import { TrendingServices } from './content/trending-services'
 import { ServiceContent } from './content'
+import { ScreenshotGrid } from './screenshot-grid'
 
 interface ServiceCardProps extends Service {
   index: number
 }
 
-export function ServiceCard({ icon, id, label, index }: ServiceCardProps) {
+export function ServiceCard({
+  icon,
+  id,
+  label,
+  screenshots,
+  index
+}: ServiceCardProps) {
   return (
     <Dialog>
       <DialogTrigger>
@@ -42,12 +49,13 @@ export function ServiceCard({ icon, id, label, index }: ServiceCardProps) {
       </DialogTrigger>
       <DialogContent
         aria-describedby={id}
-        className="dark scroll-hidden @container max-h-[calc(100dvh-120px)] w-full max-w-[90%]! overflow-y-auto leading-[30px] font-[200] md:max-w-3xl! lg:max-w-4xl! xl:max-w-5xl!"
+        className="dark scroll-hidden @container max-h-[calc(100dvh-120px)] w-full max-w-[90%]! overflow-y-auto p-0 leading-[30px] font-[200] md:max-w-3xl! lg:max-w-4xl! xl:max-w-5xl!"
       >
         <DialogHeader className="hidden">
           <DialogTitle>{label}</DialogTitle>
         </DialogHeader>
-        <ServiceContent id={id as ServiceId} />
+        <ScreenshotGrid screenshots={screenshots} id={id} />
+        <ServiceContent id={id} />
       </DialogContent>
     </Dialog>
   )

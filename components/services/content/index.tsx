@@ -1,5 +1,3 @@
-import { type ServiceId } from '../data'
-
 import { CexListings } from './cex-listings'
 import { CryptoADS } from './crypto-ads'
 import { CryptoInfluencersService } from './crypto-influencers-service'
@@ -11,7 +9,7 @@ import { PressReleasesArticles } from './press-releases-articles'
 import { TrendingServices } from './trending-services'
 import VotingServices from './voting-services'
 
-export const ServiceContent = ({ id }: { id: ServiceId }) => {
+export const ServiceContent = ({ id }: { id: string }) => {
   switch (id) {
     case 'trending-services':
       return <TrendingServices />

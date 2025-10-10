@@ -77,9 +77,10 @@ function MemberCard({
           src={image}
           alt={name}
           fill
+          sizes="(max-width: 640px) 280px, (max-width: 768px) 350px, (max-width: 1200px) 280px, 400px"
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+        <div className="from-primary-foreground/80 absolute inset-0 bg-gradient-to-t to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       </div>
 
       <div className="space-y-1">

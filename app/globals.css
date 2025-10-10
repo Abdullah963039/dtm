@@ -130,6 +130,16 @@
   }
 }
 
+html,
+body,
+:root {
+  height: 100%;
+}
+
+*:focus-visible {
+  @apply border-2 border-brand outline-none ring-0 bg-transparent;
+}
+
 @layer utilities {
   .container {
     @apply mx-auto px-4 md:px-6 lg:px-8

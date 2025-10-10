@@ -30,7 +30,6 @@ export function AboutSection() {
     <section ref={sectionRef} id="about" className="relative py-24 lg:py-32">
       <div className="container">
         <div className="grid items-center gap-16 lg:grid-cols-2">
-          {/* Left - Badge */}
           <div className="scroll-reveal flex justify-center lg:justify-start">
             <div className="group relative h-80 w-80">
               <div
@@ -41,18 +40,15 @@ export function AboutSection() {
                 }}
               />
 
-              {/* Inner Content */}
               <div className="border-brand absolute inset-8 flex items-center justify-center rounded-full border-4 bg-gradient-to-br from-black to-[#1a1a1a] transition-transform duration-300 group-hover:scale-105">
                 <div className="space-y-3 text-center">
-                  <div className="relative flex items-center justify-center">
-                    <Image
-                      src={siteConfig.logo.href}
-                      alt={siteConfig.logo.alt}
-                      width={64}
-                      height={64}
-                      className="object-cover"
-                    />
-                  </div>
+                  <Image
+                    src={siteConfig.logo.href}
+                    alt={siteConfig.logo.alt}
+                    width={64}
+                    height={64}
+                    className="mx-auto object-cover"
+                  />
                   <div className="text-primary text-lg font-bold">
                     Next Level
                   </div>
@@ -65,7 +61,6 @@ export function AboutSection() {
             </div>
           </div>
 
-          {/* Right - Content */}
           <div className="scroll-reveal space-y-6">
             <div className="border-brand/30 bg-brand/5 inline-flex items-center gap-2 rounded-full border px-4 py-2">
               <span className="text-brand text-sm font-medium uppercase">

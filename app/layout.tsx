@@ -7,9 +7,8 @@ import { Navigation } from '@/components/navigation'
 import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
-  title: 'Dubai Team Marketing',
-  description: `We provide bullish marketing services by experienced marketing team Dubai team.
-  At the core of our team is a connection that surpasses collaboration — it's unity. For us, being part of the Dubai team means standing together with loyalty, respect, and unwavering support.`,
+  title: siteConfig.page.title,
+  description: siteConfig.page.description,
   icons: [
     {
       href: siteConfig.logo.href,
