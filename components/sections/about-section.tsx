@@ -2,7 +2,7 @@
 
 import { siteConfig } from '@/lib/site-config'
 import { useEffect, useRef } from 'react'
-import { AnimatedCounter } from './animated-counter'
+import { AnimatedCounter } from '../animated-counter'
 import Image from 'next/image'
 
 export function AboutSection() {

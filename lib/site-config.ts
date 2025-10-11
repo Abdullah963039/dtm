@@ -14,6 +14,7 @@ export const siteConfig = {
   internal_links: [
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
+    { label: 'Clients', href: '#clients' },
     { label: 'Team', href: '#team' },
     { label: 'Contact', href: '#contact' }
   ],
