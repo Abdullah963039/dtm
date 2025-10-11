@@ -73,6 +73,7 @@ function ScreenshotImage({
             fill
             sizes="650px"
             className="object-cover"
+            loading="lazy"
           />
         </div>
       </DialogContent>

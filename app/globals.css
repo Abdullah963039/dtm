@@ -200,44 +200,6 @@ body,
   transform: translateY(0);
 }
 
-/* Adding infinite horizontal scroll animation for clients section */
-@keyframes scroll-x {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes scroll-x-seamless {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc(-100% / 3));
-  }
-}
-
-.animate-scroll-x {
-  animation: scroll-x 30s linear infinite both alternate;
-}
-
-.animate-scroll-x-seamless {
-  animation: scroll-x-seamless 30s linear infinite both alternate;
-  will-change: transform;
-}
-
-.animate-scroll-x-seamless:hover {
-  animation-play-state: paused;
-}
-
-.animate-scroll-x:hover {
-  animation-play-state: paused;
-}
-
 .scroll-hidden {
   -ms-overflow-style: none;
   scrollbar-width: none;
