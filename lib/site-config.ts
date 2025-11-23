@@ -1,4 +1,5 @@
 export const siteConfig = {
+  website: 'https://dtm-eta.vercel.app/',
   social_links: {
     whatsapp: 'https://wa.me/message/26WL2OWAWHPWB1',
     telegram: 'https://t.me/xxbossmarketing',
@@ -24,4 +25,4 @@ export const siteConfig = {
     description: `We provide bullish marketing services by experienced marketing team Dubai team.
   At the core of our team is a connection that surpasses collaboration — it's unity. For us, being part of the Dubai team means standing together with loyalty, respect, and unwavering support.`
   }
-}
+} as const
