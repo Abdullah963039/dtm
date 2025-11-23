@@ -14,7 +14,21 @@ export const metadata: Metadata = {
       href: siteConfig.logo.href,
       url: siteConfig.logo.href
     }
-  ]
+  ],
+  applicationName: 'Dubai Team Marketing',
+  authors: [{ name: 'Dubai Team.', url: 'https://dubaiteammktg.com/' }],
+  creator: 'Abdullah Al-Waraa',
+  keywords: ['dubai', 'dubai team', 'marketing', 'trading', 'trending'],
+  openGraph: {
+    type: 'website',
+    description: siteConfig.page.description,
+    title: siteConfig.page.title,
+    emails: [siteConfig.email],
+    images: '/og-image.png',
+    siteName: 'Dubai Team Marketing',
+    url: ''
+  },
+  robots: { index: true, follow: true }
 }
 
 const font = Inter({ subsets: ['latin'] })
