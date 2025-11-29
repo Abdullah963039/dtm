@@ -48,6 +48,7 @@ export function AboutSection() {
                     width={64}
                     height={64}
                     className="mx-auto object-cover"
+                    loading="lazy"
                   />
                   <div className="text-primary text-lg font-bold">
                     Next Level

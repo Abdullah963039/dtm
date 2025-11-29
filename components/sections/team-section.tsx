@@ -111,7 +111,11 @@ function MemberCard({
           className="bg-brand/80 text-primary from-background hover:bg-brand absolute right-4 bottom-4 hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:inline-flex"
           asChild
         >
-          <Link href={telegram_link} target="_blank">
+          <Link
+            href={telegram_link}
+            target="_blank"
+            aria-label={`Link to ${name} telegram profile`}
+          >
             <FaTelegram className="mr-1 h-4 w-4" />
             Telegram
           </Link>
@@ -131,7 +135,11 @@ function MemberCard({
           className="bg-brand/80 text-primary hover:bg-brand absolute right-4 bottom-4 duration-300 sm:hidden"
           asChild
         >
-          <Link href={telegram_link} target="_blank">
+          <Link
+            href={telegram_link}
+            target="_blank"
+            aria-label={`Link to ${name} telegram profile`}
+          >
             <FaTelegram className="mr-1 h-4 w-4" />
             Telegram
           </Link>

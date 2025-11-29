@@ -19,6 +19,7 @@ export function Footer() {
                   fill
                   sizes="24px, (max-width: 640px): 32px"
                   className="object-cover"
+                  loading="lazy"
                 />
               </div>
               <span className="text-primary group-hover:text-brand text-xl font-bold whitespace-nowrap transition-colors">
@@ -55,6 +56,7 @@ export function Footer() {
                   href={siteConfig.social_links.x}
                   target="_blank"
                   className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+                  aria-label="Dubai-Team twitter link"
                 >
                   <FaXTwitter className="size-5" />
                 </Link>
@@ -64,6 +66,7 @@ export function Footer() {
                   href={siteConfig.social_links.whatsapp}
                   target="_blank"
                   className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+                  aria-label="Dubai-Team whatsapp link"
                 >
                   <FaWhatsapp className="size-5" />
                 </Link>
@@ -74,6 +77,7 @@ export function Footer() {
                   href={siteConfig.social_links.telegram}
                   target="_blank"
                   className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+                  aria-label="Dubai-Team telegram link"
                 >
                   <FaTelegramPlane className="size-5" />
                 </Link>
@@ -84,6 +88,7 @@ export function Footer() {
                   href={siteConfig.social_links.instagram}
                   target="_blank"
                   className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+                  aria-label="Dubai-Team instagram link"
                 >
                   <FaInstagram className="size-5" />
                 </Link>
@@ -94,6 +99,7 @@ export function Footer() {
                   href={`mailto:${siteConfig.email}`}
                   target="_blank"
                   className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+                  aria-label="Dubai-Team email link"
                 >
                   <MailIcon className="size-5" />
                 </Link>

@@ -24,6 +24,7 @@ export function Navigation() {
                 fill
                 sizes="32px, (max-width: 640px): 48px"
                 className="object-cover"
+                loading="lazy"
               />
             </div>
             <span className="text-primary group-hover:text-brand text-xl font-bold tracking-tight uppercase transition-colors">
@@ -37,6 +38,7 @@ export function Navigation() {
                 key={item.label}
                 href={item.href}
                 className="text-muted-foreground hover:text-brand group flex items-center gap-x-0.5 text-sm font-medium transition-colors"
+                aria-label={`Go to ${item.label} section`}
               >
                 <ArrowRightIcon className="size-4 -rotate-[30deg] transform stroke-3 transition-transform group-hover:rotate-0" />
                 {item.label}
@@ -49,6 +51,7 @@ export function Navigation() {
               href={siteConfig.social_links.x}
               target="_blank"
               className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+              aria-label="Dubai-Team twitter link"
             >
               <FaXTwitter className="size-5" />
             </Link>
@@ -57,6 +60,7 @@ export function Navigation() {
               href={siteConfig.social_links.whatsapp}
               target="_blank"
               className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+              aria-label="Dubai-Team whatsapp link"
             >
               <FaWhatsapp className="size-5" />
             </Link>
@@ -65,6 +69,7 @@ export function Navigation() {
               href={siteConfig.social_links.telegram}
               target="_blank"
               className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+              aria-label="Dubai-Team telegram link"
             >
               <FaTelegramPlane className="size-5" />
             </Link>
@@ -73,6 +78,7 @@ export function Navigation() {
               href={siteConfig.social_links.instagram}
               target="_blank"
               className="text-muted-foreground hover:text-brand transform transition-all hover:scale-110"
+              aria-label="Dubai-Team instagram link"
             >
               <FaInstagram className="size-5" />
             </Link>
@@ -83,6 +89,7 @@ export function Navigation() {
             size="icon"
             className="text-primary lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Mobile navigation menu"
           >
             {isOpen ? <X className="size-7" /> : <Menu className="size-7" />}
           </Button>
@@ -97,6 +104,7 @@ export function Navigation() {
                   href={item.href}
                   className="text-muted-foreground hover:text-brand group flex items-center gap-x-4 text-sm font-medium transition-colors"
                   onClick={() => setIsOpen(false)}
+                  aria-label={`Go to ${item.label} section`}
                 >
                   <ArrowRightIcon className="size-4 -rotate-[30deg] transform stroke-3 transition-transform group-hover:rotate-0" />
                   {item.label}

@@ -36,7 +36,7 @@ export function ServiceCard({
           <div className="border-brand/20 group-hover:border-brand/70 group-hover:shadow-brand/40 flex aspect-video w-full transform items-center justify-center rounded-2xl border p-8 transition-all group-hover:scale-105 group-hover:shadow-md">
             <Image
               src={icon}
-              alt={label}
+              alt={`${label} image's alt text`}
               className="shrink-0 transform object-cover transition-transform group-hover:scale-110"
               width={56}
               height={56}

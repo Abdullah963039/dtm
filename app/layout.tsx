@@ -7,6 +7,7 @@ import { Navigation } from '@/components/navigation'
 import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.website),
   title: siteConfig.page.title,
   description: siteConfig.page.description,
   icons: [

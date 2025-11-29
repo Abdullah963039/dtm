@@ -14,6 +14,7 @@ export default function loading() {
             fill
             className="object-cover"
             style={{ animation: 'fadeInUp 0.5s ease-out 0.1s both' }}
+            loading="lazy"
           />
         </div>
         <div className="flex animate-pulse items-center gap-2">
